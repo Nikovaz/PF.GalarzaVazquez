@@ -77,7 +77,7 @@ body {
   /*foto de fondo */
   .container {
    
-    background-image: url('/Imagenes/Album/fondo.png');
+    background-image: url('Imagenes/Album/fondo.png');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
