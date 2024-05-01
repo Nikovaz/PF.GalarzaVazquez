@@ -37,7 +37,6 @@ body {
 
 .text-center-di {
   color: black;
-  /* Borde blanco alrededor del texto */
   -webkit-text-stroke: 1px white;
   text-align: center;
   font-size: 10px;

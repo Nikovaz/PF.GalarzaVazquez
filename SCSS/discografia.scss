@@ -2,80 +2,58 @@
 @import "base/vars";
 @import "base/reset";
 
-// Mixin para aplicar degradado al texto 
-@mixin degradado-texto($start-color, $end-color) {
-  background: linear-gradient(to right, $start-color, $end-color);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh; // Asegura que el contenedor tenga al menos la altura de la pantalla
+  width: 100%; // Asegura que el contenedor tenga el ancho de la ventana
+  margin: 15;
+  padding: 5px;
+  background: linear-gradient(to bottom, $primary-color, rgb(255, 255, 255)); // Degradado de azul a gris
+  background-size: cover; // Asegura que el fondo cubra todo el contenedor
+  background-position: center; // Centra el fondo
+  background-repeat: no-repeat; 
 
-// Mixin para el fondo con imagen 
-@mixin fondo-imagen($url) {
-  background-image: url($url);
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  background-color: #000;
-}
-
-// Bucle para generar tamaños de fuente variables 
-@for $i from 1 through 5 {
-  .font-size-#{$i} {
-    font-size: 22px + ($i * 10);
+  &-content {
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    
+    h1 {
+      font-size: 50px;
+      text-align: center;
+      font-weight: bold;
+      text-shadow: 2px 2px 4px $color-texto;
+      background: linear-gradient(to right, $color-texto, $primary-color);
+      -webkit-text-fill-color: transparent;
+      color: $primary-color; // Fallback para navegadores que no soportan el clip de fondo
+    }
+    p {
+      font-size: 20px;
+    }
   }
-}
 
-// Bucle para generar múltiples clases de altura de imagen 
-@for $i from 1 through 3 {
-  .imagen-altura-#{$i} {
+  &-img {
+    width: 100%;
+    max-width: 300px;
+    margin: 20px auto;
     img {
-      height: 100px * $i;
+      width: 100%;
+      height: auto;
+      object-fit: cover;
     }
   }
 }
 
 .text-center-di {
-  color: black;
-  -webkit-text-stroke: 1px white;
-  text-align: center;
-  @extend .font-size-3;
-}
-
-
-.hero {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  min-height: 100vh;
-
-  /* Anidamiento para la imagen del héroe */
-  .hero-img {
-    width: 80%;
-    position: relative;
-
-    img {
-      width: 100%;
-      height: 600px;
-      object-fit: contain;
-      z-index: 2;
-      position: relative;
-    }
+    font-size: 50px;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px $color-texto;
   }
 
-  /* Anidamiento para el contenido del héroe */
-  .hero-content {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-}
-/* Estilos para el fondo con imagen */
 .container {
-  background-image: url("/Imagenes/publico2.png"); // Asegúrate de proporcionar la ruta correcta a tu imagen de fondo
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  background-color: #000;
   min-height: 100vh;
   max-width: 100%;
 }
@@ -85,11 +63,12 @@
   width: 100%;
   overflow-x: hidden;
   border-radius: 15px;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), transparent);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8),
+   transparent);
 
   img {
-    height: 200px; // Ajusta la altura deseada
-    width: 90%;
+    height: 300px;
+    width: 100%;
     object-fit: cover;
   }
 
@@ -104,8 +83,8 @@
     a {
       padding: 25px;
       background-color: transparent;
-      border: 2px solid rgb(255, 255, 255);
-      color: #f7f7f7;
+      border: 2px solid rgb(6, 6, 6);
+      color: #020202;
       border-radius: 15px;
       text-decoration: none;
       text-align: center;
@@ -114,6 +93,7 @@
     }
   }
 }
+
 
 // components
 @import "components/about";
