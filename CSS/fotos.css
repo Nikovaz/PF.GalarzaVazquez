@@ -1,0 +1,112 @@
+@charset "UTF-8";
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  overflow-x: hidden;
+}
+
+.bg-gris {
+  background: linear-gradient(to bottom, #333333, #acdeda);
+  display: flex;
+  flex-wrap: inherit;
+  align-items: center;
+  justify-content: space-between;
+  color: #000000;
+}
+
+/* Estilos para el logo en la barra de navegación */
+.navbar-brand img {
+  max-width: 100px;
+  max-height: 50px;
+}
+
+/* Estilo del elemento de navegación */
+.nav-link {
+  color: #000000;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 5% auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-sizing: border-box;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.4);
+}
+
+.text-center-di {
+  color: black;
+  /* Borde blanco alrededor del texto */
+  -webkit-text-stroke: 1px white;
+  text-align: center;
+  font-size: 10px;
+}
+
+.lightbox-gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.lightbox-gallery div > img {
+  max-width: 100%;
+  display: block;
+}
+
+.lightbox-gallery div {
+  margin: 10px;
+  flex-basis: 180px;
+}
+
+.footer-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.redes-sociales {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+.redes-sociales .nav-item-icono {
+  font-size: 14px;
+}
+
+.bi {
+  width: 90px;
+  height: 40px;
+  color: #000;
+}
+
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 40px;
+  }
+  .hero-content p {
+    font-size: 18px;
+  }
+  .hero-img {
+    max-width: 100%;
+    margin: 10px auto;
+  }
+  .hero-img img {
+    height: auto;
+    object-fit: scale-down;
+  }
+}
+@media (max-width: 480px) {
+  .hero-content h1 {
+    font-size: 30px;
+  }
+  .hero-content p {
+    font-size: 16px;
+  }
+  .hero-img img {
+    object-fit: contain;
+  }
+}
+
+/*# sourceMappingURL=fotos.css.map */

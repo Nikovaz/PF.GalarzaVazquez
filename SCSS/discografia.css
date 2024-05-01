@@ -1,0 +1,213 @@
+@charset "UTF-8";
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Fondo gris */
+.bg-gris {
+  background: linear-gradient(to bottom, #333333, #acdeda);
+  display: flex;
+  flex-wrap: inherit;
+  align-items: center;
+  justify-content: space-between;
+  color: #000000;
+}
+
+/* Estilos para el logo en la barra de navegación */
+.navbar-brand img {
+  max-width: 100px;
+  max-height: 50px;
+}
+
+/* Estilo del elemento de navegación */
+.nav-link {
+  color: #000000;
+}
+
+/* Mixin para aplicar degradado al texto */
+/* Mixin para el fondo con imagen */
+/* Bucle para generar tamaños de fuente variables */
+.font-size-1 {
+  font-size: 32px;
+}
+
+.font-size-2 {
+  font-size: 42px;
+}
+
+.font-size-3, .text-center-di {
+  font-size: 52px;
+}
+
+.font-size-4 {
+  font-size: 62px;
+}
+
+.font-size-5 {
+  font-size: 72px;
+}
+
+/* Bucle para generar múltiples clases de altura de imagen */
+.imagen-altura-1 img {
+  height: 100px;
+}
+
+.imagen-altura-2 img, .producto img img {
+  height: 200px;
+}
+
+.imagen-altura-3 img {
+  height: 300px;
+}
+
+/* Texto con degradado aplicando mixin */
+.text-center-di {
+  color: black;
+  -webkit-text-stroke: 1px white;
+  text-align: center;
+}
+
+/* Sección hero */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 100vh;
+  /* Anidamiento para la imagen del héroe */
+  /* Anidamiento para el contenido del héroe */
+}
+
+.hero .hero-img {
+  width: 80%;
+  position: relative;
+}
+
+.hero .hero-img img {
+  width: 100%;
+  height: 600px;
+  object-fit: contain;
+  z-index: 2;
+  position: relative;
+}
+
+.hero .hero-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Estilos para el carrusel */
+.carousel-inner,
+.carousel-item {
+  height: 700px;
+  /* Anidamiento para las imágenes del carrusel */
+}
+
+.carousel-inner img,
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Foto de fondo con mixin para degradado */
+.container {
+  background-image: url("/Imagenes/publico2.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-color: #000;
+  min-height: 100vh;
+  max-width: 100%;
+}
+
+/* Estilos para la sección discos */
+.producto {
+  width: 100%;
+  overflow-x: hidden;
+  border-radius: 15px;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), transparent);
+}
+
+.producto img {
+  width: 90%;
+  object-fit: cover;
+}
+
+.producto .producto-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 70px;
+  color: rgb(255, 255, 255);
+  align-items: center;
+}
+
+.producto .producto-content a {
+  padding: 25px;
+  background-color: transparent;
+  border: 2px solid rgb(255, 255, 255);
+  color: #f7f7f7;
+  border-radius: 15px;
+  text-decoration: none;
+  text-align: center;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+/* Sección about */
+.about {
+  height: 600px;
+  background: url("../Imagenes/gitTango.gif");
+  background-size: cover;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.about div {
+  width: 70%;
+  text-align: center;
+}
+
+/* Botón hacia arriba */
+.bi {
+  height: 40px;
+  width: 90px;
+  color: #000000;
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 40px;
+  }
+  .hero-content p {
+    font-size: 18px;
+  }
+  .hero-img {
+    max-width: 100%;
+    margin: 10px auto;
+  }
+  .hero-img img {
+    height: auto;
+    object-fit: scale-down;
+  }
+}
+@media (max-width: 480px) {
+  .hero-content h1 {
+    font-size: 30px;
+  }
+  .hero-content p {
+    font-size: 16px;
+  }
+  .hero-img img {
+    object-fit: contain;
+  }
+}
+
+
+/*# sourceMappingURL=discografia.css.map */

@@ -1,0 +1,23 @@
+// Estilos para el fondo gris con degradado vertical
+.bg-gris {
+    background: linear-gradient(to bottom, $secondary-color, $primary-color);
+    display: flex;
+    flex-wrap: inherit;
+    align-items: center;
+    justify-content: space-between;
+    color: $color-texto; // Texto en negro
+  
+   
+  }
+  
+  /* Estilos para el logo en la barra de navegación */
+  .navbar-brand img {
+    max-width: 100px;
+    max-height: 50px;
+  }
+  
+  /* Estilo del elemento de navegación */
+  .nav-link {
+    color: $color-texto;
+  }
+  

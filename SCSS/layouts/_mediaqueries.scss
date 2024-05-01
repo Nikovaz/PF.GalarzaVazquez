@@ -1,0 +1,41 @@
+@media (max-width: 768px) {
+  .hero {
+    &-content {
+      h1 {
+        font-size: 40px; // Tamaño reducido para pantallas medianas
+      }
+      p {
+        font-size: 18px; // Tamaño ligeramente reducido
+      }
+    }
+
+    &-img {
+      max-width: 100%; // Permite que la imagen ocupe todo el ancho en pantallas pequeñas
+      margin: 10px auto; // Ajusta el margen si es necesario
+
+      img {
+        height: auto; // Mantiene la proporción de la imagen
+        object-fit: scale-down; // Ajusta la imagen para que se escale hacia abajo si es necesario
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    &-content {
+      h1 {
+        font-size: 30px; // Tamaño más pequeño para pantallas pequeñas
+      }
+      p {
+        font-size: 16px; // Tamaño mínimo legible para textos largos
+      }
+    }
+
+    &-img {
+      img {
+        object-fit: contain; // Asegura que la imagen se ajuste sin perder proporciones
+      }
+    }
+  }
+}

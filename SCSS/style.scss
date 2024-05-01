@@ -1,0 +1,48 @@
+//base
+@import "base/vars";
+@import "base/reset";
+
+// Mixin para el contenido del héroe
+@mixin hero-content-style($direction, $gap) {
+  display: flex;
+  flex-direction: $direction;
+  gap: $gap;
+}
+
+// Mixin para imágenes
+@mixin hero-img-style($width, $height, $fit) {
+  img {
+    width: $width;
+    height: $height;
+    object-fit: $fit;
+    z-index: 2;
+    position: relative;
+  }
+}
+
+// Utilizando los mixins
+.hero-content {
+  @include hero-content-style(column, 10px);
+}
+
+.hero-img {
+  width: 80%;
+  position: relative;
+  @include hero-img-style(100%, 600px, contain);
+}
+
+// Bucle para generar múltiples clases de carrusel
+@for $i from 1 through 5 {
+  .carousel-item-#{$i} {
+    @include hero-img-style(100%, 700px, cover);
+  }
+}
+
+
+//components
+@import "components/productos";
+@import "components/about";
+@import "components/footer";
+
+// Layouts
+@import "layouts/mediaqueries"

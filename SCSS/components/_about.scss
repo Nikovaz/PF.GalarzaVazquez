@@ -1,0 +1,16 @@
+// Estilos para la sección "about"
+.about {
+    height: 600px;
+    background: url('../Imagenes/gitTango.gif');
+    background-size: cover;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  
+    div {
+      width: 70%;
+      text-align: center;
+    }
+  }

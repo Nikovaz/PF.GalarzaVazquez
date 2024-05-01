@@ -1,0 +1,45 @@
+// base
+@import "base/vars";
+@import "base/reset";
+
+.container {
+  max-width: 1000px;
+  margin: 5% auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-sizing: border-box;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.4);
+}
+
+.text-center-di {
+  color: black;
+  /* Borde blanco alrededor del texto */
+  -webkit-text-stroke: 1px white;
+  text-align: center;
+  font-size: 10px;
+}
+
+.lightbox-gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.lightbox-gallery div > img {
+  max-width: 100%;
+  display: block;
+}
+
+.lightbox-gallery div {
+  margin: 10px;
+  flex-basis: 180px;
+}
+
+//components
+@import "components/footer";
+
+//layouts
+@import "layouts/mediaqueries";

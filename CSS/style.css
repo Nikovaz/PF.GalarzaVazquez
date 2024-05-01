@@ -1,0 +1,180 @@
+@charset "UTF-8";
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  overflow-x: hidden;
+}
+
+.bg-gris {
+  background: linear-gradient(to bottom, #333333, #acdeda);
+  display: flex;
+  flex-wrap: inherit;
+  align-items: center;
+  justify-content: space-between;
+  color: #000000;
+}
+
+/* Estilos para el logo en la barra de navegación */
+.navbar-brand img {
+  max-width: 100px;
+  max-height: 50px;
+}
+
+/* Estilo del elemento de navegación */
+.nav-link {
+  color: #000000;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.hero-img {
+  width: 80%;
+  position: relative;
+}
+.hero-img img {
+  width: 100%;
+  height: 600px;
+  object-fit: contain;
+  z-index: 2;
+  position: relative;
+}
+
+.carousel-item-1 img {
+  width: 100%;
+  height: 700px;
+  object-fit: cover;
+  z-index: 2;
+  position: relative;
+}
+
+.carousel-item-2 img {
+  width: 100%;
+  height: 700px;
+  object-fit: cover;
+  z-index: 2;
+  position: relative;
+}
+
+.carousel-item-3 img {
+  width: 100%;
+  height: 700px;
+  object-fit: cover;
+  z-index: 2;
+  position: relative;
+}
+
+.carousel-item-4 img {
+  width: 100%;
+  height: 700px;
+  object-fit: cover;
+  z-index: 2;
+  position: relative;
+}
+
+.carousel-item-5 img {
+  width: 100%;
+  height: 700px;
+  object-fit: cover;
+  z-index: 2;
+  position: relative;
+}
+
+.producto {
+  width: 100%;
+  overflow-x: hidden;
+  border-radius: 15px;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), transparent);
+}
+.producto img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover; /* Ajustamos la imagen para que cubra el contenedor */
+}
+.producto .producto-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 10px;
+  color: rgb(0, 0, 0);
+  display: flex;
+  align-items: center;
+}
+.producto .producto-content a {
+  padding: 15px;
+  background-color: transparent;
+  border: 2px solid rgb(0, 0, 0);
+  color: #000000;
+  border-radius: 15px;
+  text-decoration: none;
+  text-align: center;
+  font-size: 20px;
+}
+
+.about {
+  height: 600px;
+  background: url("../Imagenes/gitTango.gif");
+  background-size: cover;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+.about div {
+  width: 70%;
+  text-align: center;
+}
+
+.footer-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.redes-sociales {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+.redes-sociales .nav-item-icono {
+  font-size: 14px;
+}
+
+.bi {
+  width: 90px;
+  height: 40px;
+  color: #000;
+}
+
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 40px;
+  }
+  .hero-content p {
+    font-size: 18px;
+  }
+  .hero-img {
+    max-width: 100%;
+    margin: 10px auto;
+  }
+  .hero-img img {
+    height: auto;
+    object-fit: scale-down;
+  }
+}
+@media (max-width: 480px) {
+  .hero-content h1 {
+    font-size: 30px;
+  }
+  .hero-content p {
+    font-size: 16px;
+  }
+  .hero-img img {
+    object-fit: contain;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

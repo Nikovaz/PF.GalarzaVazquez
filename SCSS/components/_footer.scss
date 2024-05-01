@@ -1,0 +1,41 @@
+@mixin imagen-redonda($size) {
+  width: $size;
+  height: $size;
+  border-radius: 50%;
+  // Aquí puedes agregar otros estilos comunes como bordes, sombras, etc.
+}
+
+@mixin flex-end($gap) {
+  display: flex;
+  justify-content: flex-end;
+  gap: $gap;
+}
+
+@mixin icon-size($size) {
+  font-size: $size;
+}
+
+@mixin boton-arriba($width, $height, $color) {
+  width: $width;
+  height: $height;
+  color: $color;
+}
+
+.footer-img {
+  @include imagen-redonda(150px);
+  // Agrega aquí otros estilos específicos para .footer-img
+}
+
+.redes-sociales {
+  @include flex-end(10px);
+
+  .nav-item-icono {
+    @include icon-size(14px);
+    // Agrega aquí otros estilos específicos para .nav-item-icono
+  }
+}
+
+.bi {
+  @include boton-arriba(90px, 40px, #000);
+  // Agrega aquí otros estilos específicos para .bi
+}
