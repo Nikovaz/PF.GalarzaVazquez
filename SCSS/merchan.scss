@@ -4,12 +4,12 @@
 
 
 
- /* Mixin para aplicar degradado al texto */
+ // Mixin para aplicar degradado al texto 
 @mixin degradado-texto($start-color, $end-color) {
   background: linear-gradient(to right, $start-color, $end-color);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  color: $start-color; // Fallback para navegadores que no soportan el clip de fondo
+  color: $start-color; 
 }
 
 // Aplicar el mixin a los elementos de .hero
@@ -17,13 +17,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height: 100vh; // Asegura que el contenedor tenga al menos la altura de la pantalla
-  width: 100%; // Asegura que el contenedor tenga el ancho de la ventana
+  min-height: 100vh; 
+  width: 100%; 
   margin: 15;
   padding: 5px;
-  background: linear-gradient(to bottom, $primary-color, white); // Degradado de azul a gris
-  background-size: cover; // Asegura que el fondo cubra todo el contenedor
-  background-position: center; // Centra el fondo
+  background: linear-gradient(to bottom, $primary-color, white); 
+  background-size: cover; 
+  background-position: center; 
   background-repeat: no-repeat; 
 
   &-content {

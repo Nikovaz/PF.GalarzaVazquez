@@ -20,7 +20,7 @@
   }
 }
 
-// Utilizando los mixins
+
 .hero-content {
   @include hero-content-style(column, 10px);
 }

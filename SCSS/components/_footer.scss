@@ -2,7 +2,7 @@
   width: $size;
   height: $size;
   border-radius: 50%;
-  // Aquí puedes agregar otros estilos comunes como bordes, sombras, etc.
+  
 }
 
 @mixin flex-end($gap) {
@@ -23,7 +23,7 @@
 
 .footer-img {
   @include imagen-redonda(150px);
-  // Agrega aquí otros estilos específicos para .footer-img
+  
 }
 
 .redes-sociales {
@@ -31,11 +31,11 @@
 
   .nav-item-icono {
     @include icon-size(14px);
-    // Agrega aquí otros estilos específicos para .nav-item-icono
+   
   }
 }
 
 .bi {
   @include boton-arriba(90px, 40px, #000);
-  // Agrega aquí otros estilos específicos para .bi
+  
 }
