@@ -1,16 +1,18 @@
 // Estilos para la sección "about"
 .about {
-    height: 600px;
-    background: url('/Imagenes/gitTango.mp4');
-    background-size: cover;
-    padding: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-  
-    div {
-      width: 70%;
-      text-align: center;
-    }
+  height: 600px;
+  background: url('/Imagenes/fondo.png');
+  background-size: cover;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+
+  div {
+    width: 70%;
+    text-align: center;
+    /* Agrega el efecto de borde blanco y texto negro */
+    text-shadow: -2px -2px 0 rgb(0, 0, 0);
   }
+}

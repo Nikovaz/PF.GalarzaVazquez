@@ -96,7 +96,7 @@ body {
 
 .about {
   height: 600px;
-  background: url("/Imagenes/gitTango.gif");
+  background: url("/Imagenes/fondo.png");
   background-size: cover;
   padding: 20px;
   display: flex;
@@ -107,6 +107,8 @@ body {
 .about div {
   width: 70%;
   text-align: center;
+  /* Agrega el efecto de borde blanco y texto negro */
+  text-shadow: -2px -2px 0 rgb(0, 0, 0);
 }
 
 .footer-img {
