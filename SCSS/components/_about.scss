@@ -1,12 +1,12 @@
-.about {
+.semifoo{
   height: 600px;
   padding: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: rgb(16, 64, 86);
-  background: linear-gradient(to top, $color-texto, rgba(27, 26, 26, 0) 70%);
- 
+  color: rgb(19, 20, 65);
+  background: linear-gradient(to top, $color-texto, rgba(207, 196, 196, 0) 70%);
+  /* El degradado se extiende desde abajo hacia arriba */
 
   div {
       width: 70%;
