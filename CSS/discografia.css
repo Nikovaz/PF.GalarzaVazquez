@@ -111,19 +111,25 @@ body {
 
 .about {
   height: 600px;
-  background: url("/Imagenes/fondo.png");
-  background-size: cover;
   padding: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
+  color: rgb(205, 0, 0);
+  background: linear-gradient(to top, #000000, rgba(207, 196, 196, 0) 70%);
+  /* El degradado se extiende desde abajo hacia arriba */
 }
 .about div {
   width: 70%;
   text-align: center;
   /* Agrega el efecto de borde blanco y texto negro */
-  text-shadow: -2px -2px 0 rgb(0, 0, 0);
+  text-shadow: 2px 0 rgb(3, 3, 3);
+}
+.about div h2 {
+  font-size: 24px; /* Tamaño de fuente para el encabezado h2 */
+}
+.about div h6 {
+  font-size: 16px; /* Tamaño de fuente para el encabezado h6 */
 }
 
 .footer-img {
