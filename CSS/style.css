@@ -110,21 +110,25 @@ body {
   font-size: 20px;
 }
 
-.about {
+.semifoo {
   height: 600px;
-  background: url("/Imagenes/gitTango.gif");
-  background-size: cover;
   padding: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #333333;
+  color: rgb(19, 20, 65);
+  background: linear-gradient(to top, #000000, rgba(207, 196, 196, 0) 70%);
 }
-.about div {
+.semifoo div {
   width: 70%;
   text-align: center;
-  /* Agrega el borde blanco al texto */
-  -webkit-text-stroke: 1px white;
+  text-shadow: 2px 0 rgb(3, 3, 3);
+}
+.semifoo div h2 {
+  font-size: 24px;
+}
+.semifoo div h6 {
+  font-size: 16px;
 }
 
 .footer-img {
